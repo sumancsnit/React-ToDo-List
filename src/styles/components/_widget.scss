@@ -1,0 +1,29 @@
+// Widget Header
+.widget {
+    background: $color-primary-x-light;
+    margin-bottom: $xl-size;
+    -webkit-box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.2);
+
+    &__header {
+        background: $color-primary-light;
+        color: $color-white;
+        padding: $m-size;
+        display: flex;
+        justify-content: space-between;
+
+
+        &__title {
+            margin: 0;
+        }
+    }
+}
+
+.widget__message{
+    color: $color-white;
+    padding: $l-size;
+    margin: 0;
+    border-bottom: 1px solid lighten($color-primary-x-light, 10%);
+    text-align: center;
+
+}

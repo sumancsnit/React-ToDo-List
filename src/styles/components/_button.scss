@@ -1,0 +1,75 @@
+.big-button{
+    background-color: $color-secondary;
+    border: none;
+    border-bottom: .1rem solid darken($color-secondary, 10%);
+    color: $color-white;
+    font-weight: bold;
+    font-size: $l-size;
+    -webkit-box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.2);
+    margin-bottom: $m-size;
+    padding: 1rem;
+    width: 100%;
+    transition: all .2s;
+
+    &:hover {
+        -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        transform: translateY(-2px);
+        -webkit-box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.3); 
+    }
+
+    &:disabled{
+        opacity: .5;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 7px 2rem rgba(0, 0, 0, 0.2); 
+    }
+}
+
+@media(min-width: $desktop-breakpoint) {
+    .big-button{
+        margin-bottom: $xl-size;
+    }
+}
+
+.button{
+    background-color: $color-secondary;
+    border: none;
+    border-bottom: .1rem solid darken($color-secondary, 10%);
+    color: $color-white;
+    font-size: 500;
+    padding: $s-size;
+    -webkit-box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1); 
+
+
+    &:hover{
+        -webkit-transform: translateY(-.5px);
+        -ms-transform: translateY(-.5px);
+        transform: translateY(-.5px);
+        -webkit-box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 1.5rem rgba(0, 0, 0, 0.2); 
+    }
+}
+
+.button--link {
+    background: none;
+    border: none;
+    color: $color-white;
+    padding: .25rem;
+    -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    box-shadow: none;
+    
+    &:hover{
+        -webkit-transform: translateY(-.3px);
+        -ms-transform: translateY(-.3px);
+        transform: translateY(-.3px);
+        -webkit-box-shadow: none;
+        box-shadow: none; 
+    }
+}
